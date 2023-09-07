@@ -1,0 +1,78 @@
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <div class="Nameheader">
+                    <p><b>To Do</b></p>
+                </div>
+                <div class="main">
+                    <div *ngFor="let t of ToDo" class="taskContainer">
+                        <div class="task headerTask">
+                            <p><b>{{t.name}}</b></p>
+                        </div>
+                        <div class="task mainTask">
+                            <div class="contentTask">
+                                <p>{{t.content}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="Nameheader">
+                    <p><b>In Progress</b></p>
+                </div>
+                <div class="main">
+                    <div *ngFor="let t of InProgress" class="taskContainer">
+                        <div class="task headerTask">
+                            <p><b>{{t.name}}</b></p>
+                        </div>
+                        <div class="task mainTask">
+                            <div class="contentTask">
+                                <p>{{t.content}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="Nameheader">
+                    <p><b>In Review</b></p>
+                </div>
+                <div class="main">
+                    <div *ngFor="let t of InReview" class="taskContainer">
+                        <div class="task headerTask">
+                            <p><b>{{t.name}}</b></p>
+                        </div>
+                        <div class="task mainTask">
+                            <div class="contentTask">
+                                <p>{{t.content}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="Nameheader">
+                    <p><b>Done</b></p>
+                </div>
+                <div class="main">
+                    <div *ngFor="let t of Done" class="taskContainer">
+                        <div class="task headerTask">
+                            <p><b>{{t.name}}</b></p>
+                        </div>
+                        <div class="task mainTask">
+                            <div class="contentTask">
+                                <p>{{t.content}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
